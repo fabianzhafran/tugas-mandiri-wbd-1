@@ -1,0 +1,165 @@
+
+body {
+    overflow: hidden;
+    position: relative;
+    background-image: url("./assets/asset-5.jpg");
+}
+
+section.content {
+    width: 75%;
+    margin: auto;
+}
+
+section.header {
+    margin-top: 7vh;
+}
+
+.nama-urang {
+    width: 17vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.nama-urang > p, .penghalang > p {
+    position: absolute;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1vw;
+    color: rgb(59, 59, 59);
+}
+
+.nama-urang > .penghalang {
+    position: absolute;
+    width: 13.5vw;
+    height: 5vh;
+    background-color: transparent;
+    z-index: 100;
+    right: 0;
+    transition: width 0.8s, color 0.8s;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nama-urang:hover > .penghalang {
+    width: 6.5vw;
+}
+
+.nama-urang > .zhafransyah {
+    margin-left: 4vw;
+    color: transparent;
+    transition: color 0.8s;
+}
+
+.nama-urang:hover > .zhafransyah {
+    color: rgb(59, 59, 59)
+}
+
+section.main-content {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+
+.middle-stuff, .left-stuff, .right-stuff {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-stuff > p, .right-stuff > p {
+    font-family: 'Inter';
+    font-weight: 300;
+    color: rgb(105, 105, 105);
+}
+
+.left-stuff > p {
+    text-align: left;
+}
+
+p > span.text-konten {
+    font-family: 'Inter';
+    font-weight: 500;
+    color: rgb(153, 153, 153);
+    font-size: 1rem;
+}
+
+.stuff > .navigasi {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 8vh;
+}
+
+.navigasi > p.text {
+    font-family: 'Cinzel';
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0.75rem 0;
+    color: rgb(153, 153, 153);
+    transition: color 0.8s;
+}
+
+p.text:hover {
+    color: black;
+}
+
+p.text > .nomer {
+    font-weight: 400 !important;
+}
+
+.right-stuff > p {
+    text-align: right;
+}
+
+.left-stuff, .right-stuff {
+    width: 25%;
+    margin-top: 10vh;
+    justify-content: center;
+}
+
+.left-stuff {
+    align-items: flex-start;
+}
+
+.middle-stuff {
+    align-items: center;
+    width: 33%;
+}
+
+.right-stuff {
+    align-items: flex-end;
+}
+
+.stuff > img { 
+    height: auto;
+    width: 80%;
+}
+
+section.loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2000;
+    background-color: black;
+    transition: background-color 0.8s;
+}
+
+.loading > h1 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 4rem;
+    color: black;
+    transition: color 0.8s;
+}
+
+.invisible {
+    display: none;
+}
