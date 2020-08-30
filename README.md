@@ -1,1 +1,3 @@
-# tugas-mandiri-wbd-1
+# Tugas Mandiri WBD 1
+
+Menggunakan HTML CSS JS sederhana
